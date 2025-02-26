@@ -28,13 +28,21 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 x=np.array(eval(input()))
+
 y=np.array(eval(input()))
+
 mean_x=np.mean(x)
+
 mean_y=np.mean(y)
+
 num_m=0
+
 den_m=0
+
 for i in range(len(x)):
+
     num_m+=(x[i]-mean_x)*(y[i]-mean_y)
+    
     den_m+=(x[i]-mean_x)**2
 
 m=num_m/den_m
